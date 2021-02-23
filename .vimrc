@@ -37,6 +37,14 @@ set laststatus=2
 " backspace over anything.
 set backspace=indent,eol,start
 
+" Next THREE sets enable u to indent/tab 4 spaces as common IDEs do
+" show existing tab with 4 spaces width
+set tabstop=4
+" when indenting with '>', use 4 spaces width
+set shiftwidth=4
+" On pressing tab, insert 4 spaces
+set expandtab
+
 " By default, Vim doesn't let you hide a buffer (i.e. have a buffer that isn't
 " shown in any window) that has unsaved changes. This is to prevent you from "
 " forgetting about unsaved changes and then quitting e.g. via `:qa!`. We find
