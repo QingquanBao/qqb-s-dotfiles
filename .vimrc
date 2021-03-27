@@ -64,6 +64,10 @@ set incsearch
 " Highlight the keyword when u search"
 set hlsearch
 
+" Save and load Fold automatically"
+au BufWinLeave * mkview
+au BufWinEnter * silent loadview
+
 " Unbind some useless/annoying default key bindings.
 nmap Q <Nop> " 'Q' in normal mode enters Ex mode. You almost never want this.
 
